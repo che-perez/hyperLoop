@@ -1,0 +1,96 @@
+
+        *{
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .nav {
+            width: 100px;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+            position: fixed;
+            left: -30px;
+            z-index: 1;
+        }
+        .nav ul{
+            list-style: none;
+        }
+        .nav ul li{
+            margin: 50px 0;
+        }
+        .top {
+            background: linear-gradient(indigo,white,deepskyblue);
+            width: 100%;
+            height: 100%;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .bd {
+            flex: 1;
+            height: 300px;
+            background-color: rgb(55,60,74);
+            z-index: 2;
+        }
+        
+        #d3{
+            font-size: 20px;
+            word-spacing: 8px;
+            letter-spacing: 5px;
+            color: white;
+            }
+        #d3 a{
+            text-decoration: none;
+            color: white;
+        }
+        #d3 a:hover{
+            color: dimgrey;
+        }
+
+.images {
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid black;
+    box-shadow: 4px 3px 4px rgba(0,0,0,.4);
+}
+
+.backButton {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50pt;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.4);
+}
+.forwardButton {
+    position: absolute;
+     top: 50%;
+    left: 105%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50pt;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.4);
+}
+
+.g {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50pt;
+}
+.table{
+    border: 2px solid black;
+    width: 900px;
+    margin-left: 20%;
+}
+.table tr{
+    border: 2px solid black;
+}
+
+#t {
+    height: 1400px;
+}

@@ -1,0 +1,71 @@
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+
+
+
+<nav class="nav">
+        <ul>
+            <li><a href="index.html" ><img src="inicio.png" width="50"></a></li>
+            <li><a href="timeline.html"><img src="timeline-256.png" width="50"></a></li>
+            <li><a href="gallery.html"><img src="photo-512.png" width="50"></a></li>
+        
+        </ul>
+        
+ </nav>
+
+<div class="top">
+    
+    <h1 class="g">Gallery</h1>
+    
+    
+    <div class="images">
+<img class="pics" src="/gallery/pic1.jpg">
+<img class="pics" src="/gallery/pic2.jpg">
+<img class="pics" src="/gallery/pic3.jpg">
+<img class="pics" src="/gallery/pic4.jpg">
+<img class="pics" src="/gallery/pic5.jpg">
+<img class="pics" src="/gallery/pic6.jpg">
+<img class="pics" src="/gallery/pic7.jpg">
+<img class="pics" src="/gallery/pic8.jpg">
+<img class="pics" src="/gallery/pic9.jpg">
+<iframe class="pics" width="700" height="500" src="https://www.youtube.com/embed/4QEKTASeIxQ" frameborder="0" allowfullscreen></iframe>
+<img class="pics" src="/gallery/pic10.jpg">
+<img class="pics" src="/gallery/pic11.jpg">
+<img class="pics" src="/gallery/pic12.jpg">
+<img class="pics" src="/gallery/pic13.jpg">
+<iframe class="pics" width="700" height="500" src="https://www.youtube.com/embed/eTwDD8WEryo" frameborder="0" allowfullscreen></iframe>
+<img class="pics" src="/gallery/pic14.jpg">
+<iframe class="pics" width="700" height="500" src="https://www.youtube.com/embed/uLh1alyhc1E" frameborder="0" allowfullscreen></iframe>
+<iframe class="pics" width="700" height="500" src="https://www.youtube.com/embed/jjv7bB9hy0k" frameborder="0" allowfullscreen></iframe>        
+
+        
+
+<a class="backButton" onclick="plusDivs(-1)">&#10094;</a>
+<a class="forwardButton" onclick="plusDivs(+1)">&#10095;</a>
+    </div>
+</div>
+
+<script>
+    
+    var slides = 1;
+    showDivs(slides);
+    
+    function plusDivs(n) {
+        showDivs(slides += n);
+    }
+    
+    function showDivs(n) {
+        var x = document.getElementsByClassName("pics");
+        if (n > x.length) {
+            slides = 1;
+        }
+        if (n < 1) {
+            slides = x.length;
+        }
+        for(var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slides - 1].style.display = "block";
+    }
+
+</script>
